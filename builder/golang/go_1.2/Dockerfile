@@ -6,3 +6,5 @@ RUN wget http://go.googlecode.com/files/go1.2.linux-amd64.tar.gz --quiet && \
 			sudo tar -C /usr/local -xzf go1.2.linux-amd64.tar.gz && \
 			sudo chown -R ubuntu:ubuntu /usr/local/go && \
 			rm go1.2.linux-amd64.tar.gz
+RUN PATH=/usr/local/go/bin:$PATH GOPATH=/tmp/gopath /usr/local/go/bin/go get github.com/mitchellh/gox
+RUN PATH=/usr/local/go/bin:$PATH /tmp/gopath/bin/gox -build-toolchain
