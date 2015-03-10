@@ -100,6 +100,7 @@ sudo docker build -rm -t bradrydzewski/python:2.7  builder/python/python_2.7/
 sudo docker build -rm -t bradrydzewski/python:3.2  builder/python/python_3.2/
 sudo docker build -rm -t bradrydzewski/python:3.3  builder/python/python_3.3/
 sudo docker build -rm -t bradrydzewski/python:pypy builder/python/pypy/
+sudo docker build -rm -t bradrydzewski/python:all builder/python/python_all/
 ```
 
 Ruby Images
