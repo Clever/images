@@ -60,8 +60,9 @@ build("php:5.5", "php/php_5.5/");
 # python
 build("virtualenv",  "python/virtualenv");
 build("python:2.7",  "python/python_2.7/");
-build("python:3.2",  "python/python_3.2/");
+build("python:3.2",  "python/python_3.2/")
 build("python:3.3",  "python/python_3.3/");
+build("python:3.4",  "python/python_3.4/");
 build("python:pypy", "python/pypy/");
 
 # ruby
