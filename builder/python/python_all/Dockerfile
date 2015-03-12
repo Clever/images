@@ -12,6 +12,7 @@ RUN sudo apt-get update                             && \
     sudo apt-get install python3.1 python3.1-dev    && \
     sudo apt-get install python3.2 python3.2-dev    && \
     sudo apt-get install python3.3 python3.3-dev    && \
+    sudo apt-get install python3.4a python3.4-dev   && \
     sudo apt-get install pypy pypy-dev
 
 # setup default virtualenv
