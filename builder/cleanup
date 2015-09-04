@@ -56,6 +56,7 @@ remove("phpenv");
 remove("python:2.7");
 remove("python:3.2");
 remove("python:3.3");
+remove("python:3.4");
 remove("python:pypy");
 remove("virtualenv");
 
