@@ -1,3 +1,4 @@
+# Used in tests
 FROM ubuntu:precise
 RUN apt-get -qq update && apt-get -y install wget                       && \
     wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.9.tgz && \
@@ -8,4 +9,4 @@ RUN apt-get -qq update && apt-get -y install wget                       && \
     rm -rf mongodb-linux-x86_64-3.0.9
 EXPOSE 27017
 ENTRYPOINT ["usr/bin/mongod"]
-CMD ["--noprealloc", "--storageEngine", "wiredTiger", "--replSet", "TailTest"]
+CMD ["--noprealloc", "--storageEngine", "wiredTiger"]
