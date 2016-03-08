@@ -67,6 +67,7 @@ sudo docker build -rm -t bradrydzewski/go:1.2 builder/golang/go_1.2/
 sudo docker build -rm -t bradrydzewski/go:1.3 builder/golang/go_1.3/
 sudo docker build -rm -t bradrydzewski/go:1.4 builder/golang/go_1.4/
 sudo docker build -rm -t bradrydzewski/go:1.5 builder/golang/go_1.5/
+sudo docker build -rm -t bradrydzewski/go:1.6 builder/golang/go_1.6/
 ```
 
 Haskell Images
