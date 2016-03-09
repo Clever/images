@@ -1,4 +1,5 @@
 # Used in tests that require mongo to be started in repl set mode
+# Published to mongo-repl:3.0
 FROM ubuntu:precise
 RUN apt-get -qq update && apt-get -y install wget                       && \
     wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.9.tgz && \
