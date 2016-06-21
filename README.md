@@ -80,9 +80,10 @@ Node Images
 
 ```sh
 sudo docker build -rm -t bradrydzewski/node builder/node/node/
-sudo docker build -rm -t bradrydzewski/node:0.10 builder/node/node_0.10/
-sudo docker build -rm -t bradrydzewski/node:0.8  builder/node/node_0.8/
-sudo docker build -rm -t bradrydzewski/node:0.6  builder/node/node_0.6/
+sudo docker build -rm -t bradrydzewski/node:0.10  builder/node/node_0.10/
+sudo docker build -rm -t bradrydzewski/node:0.8   builder/node/node_0.8/
+sudo docker build -rm -t bradrydzewski/node:0.6   builder/node/node_0.6/
+sudo docker build -rm -t bradrydzewski/node:6.2.2 builder/node/node_6.2.2/
 ```
 
 PHP Images
@@ -128,3 +129,11 @@ TODO
 
 * Perl
 * Rust
+
+
+# Pushing to docker hub
+```
+  $ docker login
+  $ docker tag bradrydzewski/node:6.2.2 clever/drone-node:6.2.2
+  $ docker push clever/drone-node:6.2.2
+```
