@@ -27,6 +27,8 @@ sudo docker build -rm -t bradrydzewski/base base/Dockerfile
 We create language-specific Docker images from the `base` image. These images
 are intended to build and test your code.
 
+NOTE: on the Mac, run docker without sudo.
+
 Base Image
 
 ```sh
