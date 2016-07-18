@@ -139,3 +139,15 @@ TODO
   $ docker tag bradrydzewski/node:6.2.2 clever/drone-node:6.2.2
   $ docker push clever/drone-node:6.2.2
 ```
+
+# Updating drone images
+
+Sometimes, you want to update an image used for Drone (CI) builds. For example, after Go 1.6.3 was released, we wanted to update our drone-go:1.6 build to use 1.6.3 instead of 1.6.2 to include security patches.
+
+1. Add or update the Dockerfile or files in the `builder/` directory. Follow the usual PR approach and merge your change into master.
+
+2. Build the updated Docker image locally. For example, run `docker build -t <name> .` in your development VM (within the directory containing the Dockerfile to build).
+
+3. Following the steps in "Publish to docker hub", tag and push your image: `docker tag <name> clever/<repo>:<version>` and `docker push clever/<repo>:<version>`
+
+4. ssh into each Drone machine and run `docker pull clever/<repo>:<version>` (e.g. `docker pull clever/drone-go:1.6`) to pull the updated image for future builds.
