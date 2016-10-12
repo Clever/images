@@ -40,16 +40,16 @@ sudo apt-get -y install git git-core subversion mercurial bzr fossil xvfb socat
 # WARNING: ITEMS BELOW WILL CHANGE OVER TIME
 
 # install browsers
-./chromium.sh
-./firefox.sh
-./chrome.sh
-./phantomjs.sh
+#./chromium.sh
+#./firefox.sh
+#./chrome.sh
+#./phantomjs.sh
 
 # install base languages
-./openjdk.sh
+#./openjdk.sh
 ./python.sh
 ./nodejs.sh
-./ruby.sh
+#./ruby.sh
 ./golang.sh
 
 
