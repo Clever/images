@@ -1,4 +1,4 @@
-FROM bradrydzewski/base
+FROM clever/drone-base
 WORKDIR /home/ubuntu
 USER ubuntu
 ADD golang.sh /etc/drone.d/
